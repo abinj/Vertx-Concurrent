@@ -24,13 +24,13 @@ This means a single Vertx process can scale across your server, unlike Node.js.
 We call this pattern the Multi-Reactor Pattern to distinguish it from the single threaded reactor pattern.
 
 # Points to Remember
-1) Each class can be make it into a verticle by extends with AbstractVerticle class.
-2) Publish(), this method sends messages to all verticles listening on a given address.
-3) Send(), this method just sends message to any one listening verticle.
-4) Vert.x distribute message based on non-strict round robin algorithm.
+1) Each class can be make it into a verticle by extends with AbstractVerticle class.\n
+2) Publish(), this method sends messages to all verticles listening on a given address.\n
+3) Send(), this method just sends message to any one listening verticle.\n
+4) Vert.x distribute message based on non-strict round robin algorithm.\n
 
 
 # How to run the Application
-1) First we need to create fat jar
+1) First we need to create fat jar\n
 mvn clean package
 2) java -jar <fat jar file path>
