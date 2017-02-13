@@ -35,4 +35,4 @@ We call this pattern the Multi-Reactor Pattern to distinguish it from the single
 # How to run the Application
 1) First we need to create fat jar
 mvn clean package
-2) java -jar <fat jar file path>
+2) java -jar target/vertxconcurrent-1.0-SNAPSHOT.jar
