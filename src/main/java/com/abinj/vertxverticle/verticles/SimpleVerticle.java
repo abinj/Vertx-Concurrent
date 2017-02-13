@@ -2,10 +2,7 @@ package com.abinj.vertxverticle.verticles;
 
 import io.vertx.core.AbstractVerticle;
 
-/**
- * Created by dxuser on 7/2/17.
- */
-public class MainVerticle extends AbstractVerticle {
+public class SimpleVerticle extends AbstractVerticle {
 
     @Override
     public void start() throws Exception {

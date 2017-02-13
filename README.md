@@ -13,7 +13,7 @@ We already know that the Vert.x APIs are non blocking and won’t block the even
 If you do that, then that event loop will not be able to do anything else while it’s blocked.
 If you block all of the event loops in Vertx instance then your application will grind to a complete halt!
 
-#Reactor and Multi Reactor
+# Reactor and Multi Reactor
 In a standard reactor implementation there is a single event loop thread which runs around in a loop delivering all events to all handlers as they arrive.
 The trouble with a single thread is it can only run on a single core at any one time,
 so if you want your single threaded reactor application (e.g. your Node.js application) to scale over your multi-core server you have to start up and manage many different processes.
@@ -22,3 +22,10 @@ Vert.x works differently here. Instead of a single event loop, each Vertx instan
 By default we choose the number based on the number of available cores on the machine, but this can be overridden.
 This means a single Vertx process can scale across your server, unlike Node.js.
 We call this pattern the Multi-Reactor Pattern to distinguish it from the single threaded reactor pattern.
+
+# Points to Remember
+1) Each class can be make it into a verticle by extends with AbstractVerticle class.
+2) Publish(), this method sends messages to all verticles listening on a given address.
+3) Send(), this method just sends message to any one listening verticle.
+4) Vert.x distribute message based on non-strict round robin algorithm.
+5)
