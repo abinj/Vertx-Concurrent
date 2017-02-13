@@ -28,4 +28,9 @@ We call this pattern the Multi-Reactor Pattern to distinguish it from the single
 2) Publish(), this method sends messages to all verticles listening on a given address.
 3) Send(), this method just sends message to any one listening verticle.
 4) Vert.x distribute message based on non-strict round robin algorithm.
-5)
+
+
+# How to run the Application
+1) First we need to create fat jar
+mvn clean package
+2) java -jar <fat jar file path>
