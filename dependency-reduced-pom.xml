@@ -32,7 +32,7 @@
                 <transformer>
                   <manifestEntries>
                     <Main-Class>io.vertx.core.Launcher</Main-Class>
-                    <Main-Verticle>com.abinj.vertxverticle.MainVerticle</Main-Verticle>
+                    <Main-Verticle>com.abinj.vertxverticle.verticles.MainVerticle</Main-Verticle>
                   </manifestEntries>
                 </transformer>
                 <transformer>
